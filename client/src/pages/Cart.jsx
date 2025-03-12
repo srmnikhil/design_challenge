@@ -7,10 +7,10 @@ const Cart = () => {
   const navigate = useNavigate();
   const { cart, modifyQuantity, removeFromCart } = useCart();
 
-  const handleQuantityChange = (part_number, value) => {
+  const handleQuantityChange = (partId, value) => {
     const num = parseInt(value, 10);
     if (!isNaN(num) && num > 0) {
-      modifyQuantity(part_number, num, "set");
+      modifyQuantity(partId, num, "set");
     }
   };
 
@@ -50,15 +50,12 @@ const Cart = () => {
         <div className="space-y-4">
           {cart.map((item) => (
             <div
-              key={item.part_number}
+              key={item.partId}
               className="flex items-center border p-4 rounded-lg shadow-md bg-white"
             >
               {/* Image */}
               <img
-                src={
-                  item.image_link ||
-                  "https://www.autoloansolutions.ca/wp-content/uploads/2015/05/mercedes-parts.jpg"
-                }
+                src="image.png"
                 alt={item.part_name}
                 className="w-24 h-24 object-contain mr-4"
               />
@@ -67,13 +64,13 @@ const Cart = () => {
               <div className="flex-grow">
                 <h2 className="text-lg font-semibold">{item.part_name}</h2>
                 <p className="text-sm text-gray-500">
-                  {item.manufacturer_name} - {item.brand_name}
+                  {item.part_type} - {item.brand_name}
                 </p>
                 <p className="text-sm text-gray-500">
                   Part Number: {item.part_number}
                 </p>
                 <p className="text-green-600 font-semibold">
-                  ₹{item.price.toFixed(2)}
+                  ₹{item.price.toFixed(2) * item.quantity}
                 </p>
               </div>
 
@@ -81,7 +78,9 @@ const Cart = () => {
               <div className="flex items-center space-x-1">
                 <button
                   className="bg-red-500 text-white px-2 py-0.5 cursor-pointer rounded hover:bg-red-600"
-                  onClick={() => modifyQuantity(item.part_number, item.quantity, "decrease")}
+                  onClick={() =>
+                    modifyQuantity(item.partId, item.quantity, "decrease")
+                  }
                   disabled={item.quantity <= 1}
                 >
                   -
@@ -89,13 +88,16 @@ const Cart = () => {
                 <input
                   type="number"
                   value={item.quantity}
-                  min="1"
                   className="w-12 border text-center"
-                  onChange={(e) => handleQuantityChange(item.part_number, e.target.value)}
+                  onChange={(e) =>
+                    handleQuantityChange(item.partId, e.target.value)
+                  }
                 />
                 <button
                   className="bg-green-500 text-white px-2 py-0.5 rounded cursor-pointer hover:bg-green-600"
-                  onClick={() => modifyQuantity(item.part_number, item.quantity, "increase")}
+                  onClick={() =>
+                    modifyQuantity(item.partId, item.quantity, "increase")
+                  }
                 >
                   +
                 </button>
@@ -104,7 +106,7 @@ const Cart = () => {
               {/* Delete Button */}
               <button
                 className="ml-4 text-red-600 cursor-pointer hover:text-red-800"
-                onClick={() => removeFromCart(item.part_number)}
+                onClick={() => removeFromCart(item.partId)}
               >
                 <FaTrashAlt size={20} />
               </button>

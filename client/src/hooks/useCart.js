@@ -18,10 +18,10 @@ const useCart = () => {
         }
     };
 
-    const modifyQuantity = (part_number, quantity, actionType = "set") => {
+    const modifyQuantity = (partId, quantity, actionType = "set") => {
         try {
             let updatedCart = cart.map((item) => {
-                if (item.part_number === part_number) {
+                if (item.partId === partId) {
                     let newQuantity = quantity;
 
                     if (actionType === "increase") {
@@ -31,7 +31,7 @@ const useCart = () => {
                         if (newQuantity < 1) newQuantity = 1;
                     }
 
-                    console.log(`Updated quantity for part ${part_number} is: ${newQuantity}`);
+                    console.log(`Updated quantity for part ${partId} is: ${newQuantity}`);
 
                     return { ...item, quantity: newQuantity };
                 }
@@ -50,7 +50,7 @@ const useCart = () => {
             const cartData = localStorage.getItem("cart");
             const existingCart = cartData ? JSON.parse(cartData) : [];
 
-            const existingItem = existingCart.find((item) => item.part_number === part.part_number);
+            const existingItem = existingCart.find((item) => item.partId === part.partId);
 
             if (existingItem) {
                 console.log("Part already in cart:", part.part_name);
@@ -58,12 +58,12 @@ const useCart = () => {
             }
 
             const newPart = {
+                partId: part.partId,
                 part_name: part.part_name,
-                manufacturer_name: part.manufacturer_name,
-                brand_name: part.brand_name,
                 part_number: part.part_number,
+                brand_name: part.brand_name,
                 price: part.price,
-                image_link: part.image_link,
+                part_type: part.part_type,
                 quantity: 1,
             };
 
@@ -78,13 +78,13 @@ const useCart = () => {
         }
     };
 
-    const removeFromCart = (part_number) => {
+    const removeFromCart = (partId) => {
         try {
-            const updatedCart = cart.filter((item) => item.part_number !== part_number);
+            const updatedCart = cart.filter((item) => item.partId !== partId);
             localStorage.setItem("cart", JSON.stringify(updatedCart));
             setCart(updatedCart);
 
-            console.log("Removed from cart:", part_number);
+            console.log("Removed from cart:", partId);
         } catch (error) {
             console.error("Error removing from cart", error);
         }

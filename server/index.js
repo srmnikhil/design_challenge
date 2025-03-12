@@ -1,6 +1,7 @@
 const connectToDatabase = require('./db');
 const express = require('express');
 const cors = require('cors');
+const { productRoutes, supplierRoutes, inventoryRoutes } = require('./routes');
 connectToDatabase();
 
 const app = express();
@@ -8,7 +9,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// app.use("/api/auth", require("./routes/auth"));
+app.use('/api/products', productRoutes);
+app.use('/api/supplier', supplierRoutes);
+app.use('/api/inventory', inventoryRoutes);
 app.get('/', (req, res) => {
     res.send('Hello from backend');
 });

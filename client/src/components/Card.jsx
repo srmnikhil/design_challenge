@@ -3,30 +3,28 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Card = ({
+  partId,
   part_name,
-  manufacturer_name,
-  brand_name,
   part_number,
+  part_type,
+  brand_name,
   price,
-  image_link,
+  part_description
 }) => {
   const navigate = useNavigate();
   const { cart, addToCart } = useCart();
   const [isInCart, setIsInCart] = useState(false);
 
   useEffect(() => {
-    const foundInCart = cart.some((item) => item.part_number === part_number);
+    const foundInCart = cart.some((item) => item.partId === partId);
     setIsInCart(foundInCart);
-  }, [cart, part_number]);
+  }, [cart, partId]);
 
   return (
     <div className="max-w-[18rem] rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-200 hover:shadow-xl transition-shadow duration-300">
       <img
         className="w-full h-38 object-contain"
-        src={
-          image_link ||
-          "https://www.autoloansolutions.ca/wp-content/uploads/2015/05/mercedes-parts.jpg"
-        }
+        src="image.png"
         alt={part_name || "Vehicle Part"}
       />
       <div className="p-4">
@@ -35,8 +33,7 @@ const Card = ({
         </h2>
         <div className="text-gray-600 text-sm mb-4">
           <p>
-            <span className="font-semibold">Manufacturer:</span>{" "}
-            {manufacturer_name || "Unknown Manufacturer"}
+            {part_description}
           </p>
           <p>
             <span className="font-semibold">Brand:</span>{" "}
@@ -49,7 +46,7 @@ const Card = ({
         </div>
         <div className="flex items-center justify-between">
           <span className="text-lg font-semibold text-green-600">
-            ₹{price ? price.toFixed(2) : "4,999"}
+            ₹{price ? price.toFixed(2) : "N/A"}
           </span>
           <button
             className={`px-4 py-2 rounded-lg transition duration-200 ${
@@ -62,12 +59,12 @@ const Card = ({
                 navigate("/cart"); // Navigate to cart
               } else {
                 addToCart({
+                  partId,
                   part_name,
-                  manufacturer_name,
-                  brand_name,
                   part_number,
+                  brand_name,
                   price,
-                  image_link,
+                  part_type
                 }); // Add to cart
               }
             }}

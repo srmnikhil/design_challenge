@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const connectToDatabase = () => {
-    mongoose.connect('mongodb+srv://srmnikhilswn:elhMYRhOJWkJatL6@systemdesigncluster.ts5en.mongodb.net/?retryWrites=true&w=majority&appName=systemdesigncluster')
+    mongoose.connect('mongodb+srv://srmnikhilswn:elhMYRhOJWkJatL6@systemdesigncluster.ts5en.mongodb.net/inventorySystem?retryWrites=true&w=majority&appName=systemdesigncluster')
         .then(() => {
             console.log('Connected to database successfully');
         })

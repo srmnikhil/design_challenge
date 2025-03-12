@@ -4,10 +4,7 @@
     "part_number": "BP-001",
     "part_description": "High-performance ceramic brake pads for improved stopping power.",
     "price": 45.99,
-    "quantity_in_inventory": 120,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Brembo",
-    "manufacturer_name": "Brembo S.p.A.",
     "part_type": "Braking System"
   },
   {
@@ -15,10 +12,7 @@
     "part_number": "OF-023",
     "part_description": "Premium oil filter for enhanced engine protection.",
     "price": 12.5,
-    "quantity_in_inventory": 300,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Fram",
-    "manufacturer_name": "Fram Group",
     "part_type": "Engine"
   },
   {
@@ -26,10 +20,7 @@
     "part_number": "SP-009",
     "part_description": "Iridium spark plug for better fuel efficiency and durability.",
     "price": 8.99,
-    "quantity_in_inventory": 500,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "NGK",
-    "manufacturer_name": "NGK Spark Plug Co.",
     "part_type": "Ignition System"
   },
   {
@@ -37,10 +28,7 @@
     "part_number": "AF-045",
     "part_description": "High-flow air filter for increased engine performance.",
     "price": 15.75,
-    "quantity_in_inventory": 200,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "K&N",
-    "manufacturer_name": "K&N Engineering",
     "part_type": "Engine"
   },
   {
@@ -48,10 +36,7 @@
     "part_number": "ALT-017",
     "part_description": "150A alternator for reliable electrical power supply.",
     "price": 129.99,
-    "quantity_in_inventory": 50,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Bosch",
-    "manufacturer_name": "Robert Bosch GmbH",
     "part_type": "Electrical System"
   },
   {
@@ -59,10 +44,7 @@
     "part_number": "RAD-003",
     "part_description": "Aluminum radiator for efficient engine cooling.",
     "price": 89,
-    "quantity_in_inventory": 30,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Denso",
-    "manufacturer_name": "Denso Corporation",
     "part_type": "Cooling System"
   },
   {
@@ -70,10 +52,7 @@
     "part_number": "FP-012",
     "part_description": "Electric fuel pump with high-pressure output.",
     "price": 65.45,
-    "quantity_in_inventory": 80,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Delphi",
-    "manufacturer_name": "Delphi Technologies",
     "part_type": "Fuel System"
   },
   {
@@ -81,10 +60,7 @@
     "part_number": "TB-008",
     "part_description": "Durable timing belt for precise engine timing.",
     "price": 29.99,
-    "quantity_in_inventory": 150,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Gates",
-    "manufacturer_name": "Gates Corporation",
     "part_type": "Engine"
   },
   {
@@ -92,10 +68,7 @@
     "part_number": "SA-019",
     "part_description": "Gas-charged shock absorber for smooth ride.",
     "price": 55,
-    "quantity_in_inventory": 90,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Monroe",
-    "manufacturer_name": "Tenneco Inc.",
     "part_type": "Suspension System"
   },
   {
@@ -103,10 +76,7 @@
     "part_number": "BAT-004",
     "part_description": "12V lead-acid battery with 650 CCA.",
     "price": 99.95,
-    "quantity_in_inventory": 40,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Optima",
-    "manufacturer_name": "Clarios",
     "part_type": "Electrical System"
   },
   {
@@ -114,10 +84,7 @@
     "part_number": "EM-022",
     "part_description": "Stainless steel muffler for reduced noise.",
     "price": 75.5,
-    "quantity_in_inventory": 60,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "MagnaFlow",
-    "manufacturer_name": "MagnaFlow",
     "part_type": "Exhaust System"
   },
   {
@@ -125,10 +92,7 @@
     "part_number": "CK-015",
     "part_description": "Complete clutch kit for manual transmissions.",
     "price": 149.99,
-    "quantity_in_inventory": 25,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Luk",
-    "manufacturer_name": "Schaeffler Group",
     "part_type": "Transmission"
   },
   {
@@ -136,10 +100,7 @@
     "part_number": "WB-007",
     "part_description": "Sealed wheel bearing for reduced friction.",
     "price": 34.25,
-    "quantity_in_inventory": 110,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "SKF",
-    "manufacturer_name": "SKF Group",
     "part_type": "Suspension System"
   },
   {
@@ -147,10 +108,7 @@
     "part_number": "HL-011",
     "part_description": "LED headlight assembly for improved visibility.",
     "price": 120,
-    "quantity_in_inventory": 35,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Philips",
-    "manufacturer_name": "Lumileds",
     "part_type": "Lighting"
   },
   {
@@ -158,10 +116,7 @@
     "part_number": "TH-006",
     "part_description": "Engine thermostat for temperature regulation.",
     "price": 19.99,
-    "quantity_in_inventory": 180,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Stant",
-    "manufacturer_name": "Stant Corporation",
     "part_type": "Cooling System"
   },
   {
@@ -169,10 +124,7 @@
     "part_number": "BR-013",
     "part_description": "Vented brake rotor for enhanced heat dissipation.",
     "price": 60.75,
-    "quantity_in_inventory": 70,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "ACDelco",
-    "manufacturer_name": "General Motors",
     "part_type": "Braking System"
   },
   {
@@ -180,10 +132,7 @@
     "part_number": "IC-010",
     "part_description": "High-output ignition coil for reliable spark.",
     "price": 39.95,
-    "quantity_in_inventory": 140,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Denso",
-    "manufacturer_name": "Denso Corporation",
     "part_type": "Ignition System"
   },
   {
@@ -191,10 +140,7 @@
     "part_number": "WP-005",
     "part_description": "High-flow water pump for engine cooling.",
     "price": 45,
-    "quantity_in_inventory": 85,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "GMB",
-    "manufacturer_name": "GMB Corporation",
     "part_type": "Cooling System"
   },
   {
@@ -202,10 +148,7 @@
     "part_number": "SM-014",
     "part_description": "Heavy-duty starter motor for quick engine start.",
     "price": 110.5,
-    "quantity_in_inventory": 45,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Remy",
-    "manufacturer_name": "Remy International",
     "part_type": "Electrical System"
   },
   {
@@ -213,10 +156,7 @@
     "part_number": "FI-018",
     "part_description": "Precision fuel injector for optimal fuel delivery.",
     "price": 55.99,
-    "quantity_in_inventory": 100,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Bosch",
-    "manufacturer_name": "Robert Bosch GmbH",
     "part_type": "Fuel System"
   },
   {
@@ -224,10 +164,7 @@
     "part_number": "CA-020",
     "part_description": "Steel control arm for suspension stability.",
     "price": 70.25,
-    "quantity_in_inventory": 60,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Moog",
-    "manufacturer_name": "Moog Inc.",
     "part_type": "Suspension System"
   },
   {
@@ -235,10 +172,7 @@
     "part_number": "CC-016",
     "part_description": "Direct-fit catalytic converter for emissions control.",
     "price": 199.99,
-    "quantity_in_inventory": 20,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Walker",
-    "manufacturer_name": "Tenneco Inc.",
     "part_type": "Exhaust System"
   },
   {
@@ -246,10 +180,7 @@
     "part_number": "PSP-021",
     "part_description": "Hydraulic power steering pump for smooth steering.",
     "price": 85,
-    "quantity_in_inventory": 55,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Cardone",
-    "manufacturer_name": "Cardone Industries",
     "part_type": "Steering System"
   },
   {
@@ -257,10 +188,7 @@
     "part_number": "OS-024",
     "part_description": "Wideband oxygen sensor for precise air-fuel ratio.",
     "price": 49.95,
-    "quantity_in_inventory": 130,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "NGK",
-    "manufacturer_name": "NGK Spark Plug Co.",
     "part_type": "Exhaust System"
   },
   {
@@ -268,10 +196,7 @@
     "part_number": "TF-025",
     "part_description": "Transmission filter kit with gasket.",
     "price": 22.5,
-    "quantity_in_inventory": 160,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "WIX",
-    "manufacturer_name": "Mann+Hummel",
     "part_type": "Transmission"
   },
   {
@@ -279,10 +204,7 @@
     "part_number": "TRE-026",
     "part_description": "Adjustable tie rod end for steering alignment.",
     "price": 28.75,
-    "quantity_in_inventory": 140,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Moog",
-    "manufacturer_name": "Moog Inc.",
     "part_type": "Steering System"
   },
   {
@@ -290,10 +212,7 @@
     "part_number": "BC-027",
     "part_description": "Remanufactured brake caliper for consistent braking.",
     "price": 65,
-    "quantity_in_inventory": 80,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Raybestos",
-    "manufacturer_name": "Raybestos",
     "part_type": "Braking System"
   },
   {
@@ -301,10 +220,7 @@
     "part_number": "SB-028",
     "part_description": "Multi-rib serpentine belt for accessory drive.",
     "price": 19.99,
-    "quantity_in_inventory": 200,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Dayco",
-    "manufacturer_name": "Dayco Products",
     "part_type": "Engine"
   },
   {
@@ -312,10 +228,7 @@
     "part_number": "MAF-029",
     "part_description": "MAF sensor for accurate air intake measurement.",
     "price": 79.95,
-    "quantity_in_inventory": 90,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Hitachi",
-    "manufacturer_name": "Hitachi Automotive",
     "part_type": "Engine"
   },
   {
@@ -323,10 +236,7 @@
     "part_number": "BJ-030",
     "part_description": "Greaseable ball joint for suspension durability.",
     "price": 25.5,
-    "quantity_in_inventory": 150,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "TRW",
-    "manufacturer_name": "ZF TRW",
     "part_type": "Suspension System"
   },
   {
@@ -334,10 +244,7 @@
     "part_number": "DC-031",
     "part_description": "Distributor cap for reliable spark distribution.",
     "price": 14.99,
-    "quantity_in_inventory": 220,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Standard",
-    "manufacturer_name": "Standard Motor Products",
     "part_type": "Ignition System"
   },
   {
@@ -345,10 +252,7 @@
     "part_number": "FTC-032",
     "part_description": "Locking fuel cap for secure fuel tank sealing.",
     "price": 9.75,
-    "quantity_in_inventory": 300,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Stant",
-    "manufacturer_name": "Stant Corporation",
     "part_type": "Fuel System"
   },
   {
@@ -356,10 +260,7 @@
     "part_number": "RH-033",
     "part_description": "Reinforced radiator hose for coolant flow.",
     "price": 12.25,
-    "quantity_in_inventory": 250,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Gates",
-    "manufacturer_name": "Gates Corporation",
     "part_type": "Cooling System"
   },
   {
@@ -367,10 +268,7 @@
     "part_number": "CVJ-034",
     "part_description": "Constant velocity joint for smooth power transfer.",
     "price": 45,
-    "quantity_in_inventory": 100,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "GKN",
-    "manufacturer_name": "GKN Driveline",
     "part_type": "Drivetrain"
   },
   {
@@ -378,10 +276,7 @@
     "part_number": "TL-035",
     "part_description": "LED tail light assembly for enhanced visibility.",
     "price": 95.5,
-    "quantity_in_inventory": 40,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "TYC",
-    "manufacturer_name": "TYC Brother Industrial",
     "part_type": "Lighting"
   },
   {
@@ -389,10 +284,7 @@
     "part_number": "CAF-036",
     "part_description": "Activated carbon cabin filter for clean air.",
     "price": 17.99,
-    "quantity_in_inventory": 180,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Purolator",
-    "manufacturer_name": "Mann+Hummel",
     "part_type": "Interior"
   },
   {
@@ -400,10 +292,7 @@
     "part_number": "EGR-037",
     "part_description": "Exhaust gas recirculation valve for emissions control.",
     "price": 65.75,
-    "quantity_in_inventory": 70,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Delphi",
-    "manufacturer_name": "Delphi Technologies",
     "part_type": "Exhaust System"
   },
   {
@@ -411,10 +300,7 @@
     "part_number": "TB-038",
     "part_description": "Electronic throttle body for precise air control.",
     "price": 110,
-    "quantity_in_inventory": 50,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Bosch",
-    "manufacturer_name": "Robert Bosch GmbH",
     "part_type": "Engine"
   },
   {
@@ -422,10 +308,7 @@
     "part_number": "WHA-039",
     "part_description": "Complete wheel hub with integrated bearing.",
     "price": 85.25,
-    "quantity_in_inventory": 60,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Timken",
-    "manufacturer_name": "The Timken Company",
     "part_type": "Suspension System"
   },
   {
@@ -433,10 +316,7 @@
     "part_number": "PCV-040",
     "part_description": "Positive crankcase ventilation valve for emissions.",
     "price": 7.99,
-    "quantity_in_inventory": 400,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "FRAM",
-    "manufacturer_name": "Fram Group",
     "part_type": "Engine"
   },
   {
@@ -444,10 +324,7 @@
     "part_number": "BMC-041",
     "part_description": "Master cylinder for hydraulic brake system.",
     "price": 95,
-    "quantity_in_inventory": 45,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Wagner",
-    "manufacturer_name": "Federal-Mogul",
     "part_type": "Braking System"
   },
   {
@@ -455,10 +332,7 @@
     "part_number": "FPR-042",
     "part_description": "Regulator for consistent fuel pressure.",
     "price": 35.5,
-    "quantity_in_inventory": 120,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "ACDelco",
-    "manufacturer_name": "General Motors",
     "part_type": "Fuel System"
   },
   {
@@ -466,10 +340,7 @@
     "part_number": "STA-043",
     "part_description": "Complete strut assembly for suspension support.",
     "price": 115.99,
-    "quantity_in_inventory": 50,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "KYB",
-    "manufacturer_name": "KYB Corporation",
     "part_type": "Suspension System"
   },
   {
@@ -477,10 +348,7 @@
     "part_number": "CPS-044",
     "part_description": "Sensor for camshaft timing detection.",
     "price": 29.95,
-    "quantity_in_inventory": 130,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Dorman",
-    "manufacturer_name": "Dorman Products",
     "part_type": "Engine"
   },
   {
@@ -488,10 +356,7 @@
     "part_number": "AS-045",
     "part_description": "Rear axle shaft for power transmission.",
     "price": 145,
-    "quantity_in_inventory": 30,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Yukon",
-    "manufacturer_name": "Yukon Gear & Axle",
     "part_type": "Drivetrain"
   },
   {
@@ -499,10 +364,7 @@
     "part_number": "WWB-046",
     "part_description": "All-season wiper blade for clear visibility.",
     "price": 14.5,
-    "quantity_in_inventory": 250,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Rain-X",
-    "manufacturer_name": "ITW Global Brands",
     "part_type": "Exterior"
   },
   {
@@ -510,10 +372,7 @@
     "part_number": "IMG-047",
     "part_description": "Gasket set for intake manifold sealing.",
     "price": 18.75,
-    "quantity_in_inventory": 200,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Fel-Pro",
-    "manufacturer_name": "Federal-Mogul",
     "part_type": "Engine"
   },
   {
@@ -521,10 +380,7 @@
     "part_number": "PBC-048",
     "part_description": "Durable cable for parking brake system.",
     "price": 22.99,
-    "quantity_in_inventory": 140,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Dorman",
-    "manufacturer_name": "Dorman Products",
     "part_type": "Braking System"
   },
   {
@@ -532,10 +388,7 @@
     "part_number": "CKPS-049",
     "part_description": "Sensor for crankshaft position detection.",
     "price": 32.5,
-    "quantity_in_inventory": 110,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Bosch",
-    "manufacturer_name": "Robert Bosch GmbH",
     "part_type": "Engine"
   },
   {
@@ -543,10 +396,7 @@
     "part_number": "DC-050",
     "part_description": "Heavy-duty differential cover with gasket.",
     "price": 55,
-    "quantity_in_inventory": 70,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Motive",
-    "manufacturer_name": "Motive Gear",
     "part_type": "Drivetrain"
   },
   {
@@ -554,10 +404,7 @@
     "part_number": "FL-051",
     "part_description": "High-intensity fog light for low-visibility conditions.",
     "price": 45.99,
-    "quantity_in_inventory": 90,
-    "image_link": "https://play-lh.googleusercontent.com/7VGGuCDlNZXbx--5_oQrbVti1N_695h1sZccbe2ZgEudVa3BP2ygo_2Igl2WFjyZig",
     "brand_name": "Hella",
-    "manufacturer_name": "Hella GmbH",
     "part_type": "Lighting"
   }
 ]
