@@ -1,7 +1,10 @@
+import { useEffect, useState } from "react";
 import useCart from "../hooks/useCart";
+import SupplierListing from "../components/SuppliersListing";
 import { FaTrashAlt } from "react-icons/fa";
 import { IoArrowBack } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -13,14 +16,30 @@ const Cart = () => {
       modifyQuantity(partId, num, "set");
     }
   };
-
-  const placeOrder = () => {
+  const [suppliers, setSuppliers] = useState(null);
+  const placeOrder = async () => {
     if (cart.length === 0) {
       alert("Cart is empty. Add items before placing an order!");
       return;
     }
-    navigate("/suppliers");
+    console.log("cart", cart);
+    const skuIdsWithRequirement = cart.map((_) => {
+      return {
+        skuId: _.partId,
+        requirement: _.quantity
+      }
+    }
+
+    )
+    const response = await axios.post("http://localhost:5000/api/supplier/rank-suppliers", {
+      skuIdsWithRequirement: skuIdsWithRequirement
+    });
+    setSuppliers(response.data);
   };
+
+  useEffect(() => {
+    console.log("Suppliers", suppliers);
+  }, [suppliers])
 
   return (
     <div className="max-w-4xl mx-auto p-4">
@@ -118,9 +137,24 @@ const Cart = () => {
             className="w-full bg-blue-600 text-white py-3 cursor-pointer rounded-lg mt-4 hover:bg-blue-700"
             onClick={placeOrder}
           >
-            Place Order
+            Rank Suppliers
           </button>
+
+          {
+            suppliers ?
+              // <>
+              //   Show list here
+              // </>
+
+              <SupplierListing
+                suppliers={suppliers}
+              />
+              :
+              null
+          }
+
         </div>
+
       )}
     </div>
   );
