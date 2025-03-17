@@ -32,11 +32,9 @@ router.post("/rank-suppliers", async (req, res) => {
             return res.status(400).json({ error: "skuIds must be a non-empty array" });
         }
         const skus = await getSkuByIDs(skuIds);
-        console.log("Total Skus %j", skus)
 
         // Convert skuIds to ObjectId format
         const objectIds = skuIds.map(id => ObjectId.createFromHexString(id)); // ✅ Alternative
-
 
         // Run aggregation
         const suppliers = await Supplier.aggregate([
@@ -64,17 +62,16 @@ router.post("/rank-suppliers", async (req, res) => {
                 }
             },
             {
-                "$lookup": {
-                    "from": "skus",
-                    "localField": "items.skuId",
-                    "foreignField": "_id",
-                    "as": "skuDetails"
+                $lookup: {
+                    from: "skus",
+                    localField: "items.skuId",
+                    foreignField: "_id",
+                    as: "skuDetails"
                 }
             },
 
             { $match: { items: { $ne: [] } } }
         ]);
-
 
         const rankedSuppliers = rankSuppliers(suppliers, skuIdsWithRequirement);
         for (const rankedSupplier of rankedSuppliers) {
@@ -124,15 +121,21 @@ router.post("/rank-suppliers", async (req, res) => {
 function rankSuppliers(suppliers, skuIdsWithRequirement) {
     try {
         for (const supplier of suppliers) {
-            const { totalAvailablity, somethingMissing, somethingLess, priority } = getScore(supplier.items, skuIdsWithRequirement);
+            const { totalAvailablity, somethingMissing, uniquePartsFulfilled, somethingLess, priority } = getScore(supplier.items, skuIdsWithRequirement);
             supplier.totalAvailablity = totalAvailablity;
             supplier.somethingMissing = somethingMissing;
             supplier.somethingLess = somethingLess;
+            supplier.uniquePartsFulfilled = uniquePartsFulfilled;
             supplier.priority = priority;
         }
         return suppliers.sort((a, b) => {
-            return a.priority - b.priority || b.totalAvailablity - a.totalAvailablity;
-        });
+            console.log(b.uniquePartsFulfilled)
+            return (
+              a.priority - b.priority || // Step 1: Priority check
+              b.uniquePartsFulfilled - a.uniquePartsFulfilled || // Step 2: Unique parts fulfilled check
+              b.totalAvailablity - a.totalAvailablity // Step 3: Total availability check
+            );
+          });
     } catch (err) {
         console.log("Error Occured in rankSuppliers %s", err);
     }
@@ -161,10 +164,13 @@ function getScore(skuIdsWithStock, skuIdsWithRequirement) {
         let somethingMissing = false;
         let somethingLess = false;
         let totalAvailablity = 0;
+        let uniquePartsFulfilled = 0;
+
         for (const sku of skuIdsWithRequirement) {
             const availability = skuIdsWithStock.find((_) => _.skuId == sku.skuId);
 
             if (availability) {
+                uniquePartsFulfilled++;  // Increment when a part is found
                 availableStock = availability.stock;
                 if (availableStock < sku.requirement) {
                     somethingLess = true;
@@ -175,7 +181,7 @@ function getScore(skuIdsWithStock, skuIdsWithRequirement) {
             }
         }
         let priority = getPriority(somethingMissing, somethingLess)
-        return { totalAvailablity, somethingMissing, somethingLess, priority };
+        return { totalAvailablity, somethingMissing, somethingLess, priority, uniquePartsFulfilled };
     } catch (err) {
         console.log("Error Occured in getScore %s", err);
     }
