@@ -1,4 +1,5 @@
-const Supplier = require("../models/Supplier");
+const { Supplier } = require("../models");
+const { getRankedSuppliers } = require('../services/getRankedSuppliersService');
 
 // POST: Create a new supplier
 const createSupplier = async (req, res) => {
@@ -71,10 +72,34 @@ const bulkInsertSuppliers = async (req, res) => {
   }
 };
 
+// Rank the suppliers
+
+const rankSupplierHandler = async (req, res) => {
+  try {
+    const { skuIdsWithRequirement } = req.body;
+
+    // Input validation stays in the controller
+    const skuIds = skuIdsWithRequirement.map((_) => _.skuId);
+    if (!Array.isArray(skuIds) || skuIds.length === 0) {
+      return res.status(400).json({ error: "skuIds must be a non-empty array" });
+    }
+
+    // Delegate business logic to service
+    const rankedSuppliers = await getRankedSuppliers(skuIdsWithRequirement);
+
+    // Send response
+    res.json(rankedSuppliers);
+  } catch (error) {
+    console.error("Error fetching suppliers:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
 module.exports = {
   createSupplier,
   getSuppliers,
   updateSupplier,
   deleteSupplier,
-  bulkInsertSuppliers
+  bulkInsertSuppliers,
+  rankSupplierHandler
 };

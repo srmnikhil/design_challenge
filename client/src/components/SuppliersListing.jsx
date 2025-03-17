@@ -15,6 +15,7 @@ const SuppliersListing = ({ suppliers, resetSelection }) => {
     if (resetSelection) {
       setSelectedSupplier(null);
     }
+    console.log(suppliers);
   }, [resetSelection]);
 
   const handleConfirmOrder = () => {
@@ -22,18 +23,22 @@ const SuppliersListing = ({ suppliers, resetSelection }) => {
       alert("Please select a supplier first.");
       return;
     }
-  
+
     const supplierDetails = selectedSupplier;
     let alertMessage = "";
-  
+
     supplierDetails.items.forEach((item) => {
       if (item.stock === null) {
         alertMessage += `No stock available for ${item.itemDetail.part_name}. `;
       } else if (item.requirement > item.stock) {
-        alertMessage += `Not enough stock for ${item.itemDetail.part_name}. Available stock: ${item.stock}. Please decrease quantity by ${item.requirement - item.stock}. `;
+        alertMessage += `Not enough stock for ${
+          item.itemDetail.part_name
+        }. Available stock: ${item.stock}. Please decrease quantity by ${
+          item.requirement - item.stock
+        }. `;
       }
     });
-  
+
     if (alertMessage) {
       alert(alertMessage.trim());
     } else {
@@ -41,12 +46,9 @@ const SuppliersListing = ({ suppliers, resetSelection }) => {
       console.log("Selected Supplier:", selectedSupplier);
     }
   };
-  
-  
-  
 
   return (
-    <div className="max-w-6xl mx-auto p-6 space-y-6">
+    <div className="max-w-4xl mx-auto p-4 space-y-4">
       <h1 className="text-4xl font-bold text-gray-900">Suppliers</h1>
       {suppliers.length === 0 ? (
         <p className="text-lg text-gray-500">
@@ -93,7 +95,7 @@ const SuppliersListing = ({ suppliers, resetSelection }) => {
                     </p>
                   </div>
                 </div>
-                {/* Show Details Button */}
+                {/* Show/Hide Details Button */}
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
@@ -101,12 +103,16 @@ const SuppliersListing = ({ suppliers, resetSelection }) => {
                       expandedSupplier === supplier._id ? null : supplier._id
                     );
                   }}
-                  className="self-end text-white text-sm mt-2 flex items-center space-x-1"
+                  className="self-end text-black bg-white px-4 cursor-pointer transition-transform transform hover:font-bold text-sm mt-2 flex items-center space-x-1"
                 >
                   <span>
-                    {expandedSupplier ? "Hide details" : "Show details"}
+                    {expandedSupplier === supplier._id
+                      ? "Hide details"
+                      : "Show details"}
                   </span>
-                  <span className="text-lg">↓</span>
+                  <span className="text-lg">
+                    {expandedSupplier === supplier._id ? "↑" : "↓"}
+                  </span>
                 </button>
                 {/* Items List */}
                 {expandedSupplier === supplier._id && (
@@ -148,14 +154,14 @@ const SuppliersListing = ({ suppliers, resetSelection }) => {
       )}
 
       {/* Confirm Order Button */}
-      <div className="sticky bottom-0 w-full bg-white shadow-lg p-4 mt-8">
+      <div className="sticky bottom-0 w-full shadow-lg p-4 mt-8">
         <div className="max-w-6xl mx-auto">
           <button
             onClick={handleConfirmOrder}
             disabled={!selectedSupplier}
             className={`w-full py-3 rounded-lg text-lg font-semibold transition-colors ${
               selectedSupplier
-                ? "bg-blue-600 text-white hover:bg-blue-700"
+                ? "bg-blue-600 text-white hover:bg-blue-700 cursor-pointer"
                 : "bg-gray-400 text-gray-700 cursor-not-allowed"
             }`}
           >
