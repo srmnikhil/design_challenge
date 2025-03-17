@@ -1,24 +1,19 @@
 const express = require("express");
-const { createSupplier, getSuppliers, updateSupplier, deleteSupplier, bulkInsertSuppliers, rankSupplierHandler, } = require("../controllers/supplierController");
+const SupplierController = require("../controllers/SupplierController");
+const SupplierService = require("../services/SupplierService");
 
 const router = express.Router();
 
-// POST: Create a new supplier
-router.post("/", createSupplier);
+// Instantiate classes
+const supplierService = new SupplierService();
+const supplierController = new SupplierController(supplierService);
 
-// GET: Fetch all suppliers
-router.get("/", getSuppliers);
-
-// PUT: Update supplier details
-router.put("/:id", updateSupplier);
-
-// DELETE: Delete supplier details
-router.delete("/:id", deleteSupplier);
-
-// POST: Insert Bulk Suppliers
-router.post('/bulk-insert', bulkInsertSuppliers);
-
-// POST: Rank Suppliers
-router.post("/rank-suppliers", rankSupplierHandler);
+// Routes
+router.post("/", supplierController.createSupplier.bind(supplierController));
+router.get("/", supplierController.getSuppliers.bind(supplierController));
+router.put("/:id", supplierController.updateSupplier.bind(supplierController));
+router.delete("/:id", supplierController.deleteSupplier.bind(supplierController));
+router.post("/bulk-insert", supplierController.bulkInsertSuppliers.bind(supplierController));
+router.post("/rank-suppliers", supplierController.rankSuppliers.bind(supplierController));
 
 module.exports = router;

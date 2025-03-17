@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const { getProducts, createProduct, updateProduct, bulkInsertProducts } = require('../controllers/productController');
+const productController = require('../controllers/ProductController');
 
 // POST: Create a new product
-router.post('/', createProduct);
+router.post('/', productController.createProduct);
 
 // POST: Bulk insert products
-router.post('/bulk-insert', bulkInsertProducts);
+router.post('/bulk-insert', productController.bulkInsertProducts);
 
 // GET: Fetch all products
-router.get('/', getProducts);
+router.get('/', productController.getProducts);
 
 // PUT: Update one product (all details or single detail)
-router.put('/:id', updateProduct);
+router.put('/:id', productController.updateProduct);
 
 module.exports = router;
