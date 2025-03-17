@@ -16,7 +16,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products");
+        const response = await axios.get("https://design-challenge-syoc.onrender.com/api/products");
         setVehicleParts(response.data);
       } catch (err) {
         setError("Failed to fetch products");

@@ -33,7 +33,7 @@ const Cart = () => {
       };
     });
     const response = await axios.post(
-      "http://localhost:5000/api/supplier/rank-suppliers",
+      "https://design-challenge-syoc.onrender.com/api/supplier/rank-suppliers",
       {
         skuIdsWithRequirement: skuIdsWithRequirement,
       }
