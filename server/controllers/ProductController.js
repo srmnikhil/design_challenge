@@ -1,7 +1,6 @@
 const Product = require('../models/Sku.js');
 
 class ProductController {
-  // Create a new product
   async createProduct(req, res) {
     try {
       const product = await Product.create(req.body);
@@ -11,7 +10,6 @@ class ProductController {
     }
   }
 
-  // Fetch all products
   async getProducts(req, res) {
     try {
       const products = await Product.find();
@@ -21,7 +19,6 @@ class ProductController {
     }
   }
 
-  // Update a product (all details or a single detail)
   async updateProduct(req, res) {
     const { id } = req.params;
     const updateData = req.body;
@@ -46,7 +43,6 @@ class ProductController {
     }
   }
 
-  // Bulk insert products
   async bulkInsertProducts(req, res) {
     const products = req.body;
 
@@ -63,4 +59,4 @@ class ProductController {
   }
 }
 
-module.exports = new ProductController();
+module.exports = ProductController;
