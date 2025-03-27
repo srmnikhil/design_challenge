@@ -16,6 +16,6 @@ jobs:
           END=$(date +%s%N)
           RESPONSE_TIME=$(( (END - START) / 1000000 ))  # Milliseconds me convert karega
 
-          curl -X POST "https://script.google.com/macros/s/AKfycbyoJ_MCMwtyrZ6RHfj-Wj-L5fAixUfbUJoXwwwqH6BvRpWDauwz0j-1ccuREhoFCAkW/exec" \
+          curl -X POST "https://script.google.com/macros/s/AKfycbxJlzOHCi7D8ckuXMTZdjfnntNxw3PUOzlwCLj_BD4n79UjrnGVAAdo7X82TsoNhHGi/exec" \
                -H "Content-Type: application/json" \
                -d "{\"responseTime\": $RESPONSE_TIME, \"responseData\": \"$RESPONSE\"}"

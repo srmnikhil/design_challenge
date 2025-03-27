@@ -84,7 +84,7 @@ class SupplierService {
     for (const supplier of rankedSuppliers) {
       supplier.items = this.#enrichItems(supplier.items, skus, skuIdsWithRequirement);
       this.#addMissingItems(supplier, skuIdsWithRequirement, skus);
-      // Safely sort items, handling missing itemDetail
+      
       supplier.items.sort((a, b) => {
         const aName = a.itemDetail?.part_name || '';
         const bName = b.itemDetail?.part_name || '';
